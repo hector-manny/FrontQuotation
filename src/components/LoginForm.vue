@@ -33,7 +33,7 @@ const handleSubmit = async () => {
   try {
     await authStore.login(email.value, password.value);
     alert('Inicio de sesión exitoso');
-    router.push('/dashboard'); // Redirigir a una página específica después del login
+    router.push('/'); // Redirigir a una página específica después del login
   } catch (error) {
     const errorMessage = (error as Error).message;
     alert('Error al iniciar sesión: ' + errorMessage);

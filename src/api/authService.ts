@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://api.tu-backend.com', // Cambia por tu URL base
+  baseURL: 'http://localhost:8080', // Cambia por tu URL base
 });
 
 export const login = async (email: string, password: string): Promise<{ token: string; role: string; email: string }> => {
